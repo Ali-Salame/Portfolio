@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center;
   background-size: cover;
 }
 .home__name {
@@ -145,22 +145,20 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: flex-end;
 }
 .about__bio-image p {
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 2rem 5vh;
   text-align: center;
 }
 .about__bio {
   width: 80%;
-  text-align: center;
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
@@ -279,7 +277,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/dist/img/Capture.jpg") center;
   background-size: cover;
 }
 .contact h2 {
@@ -327,6 +325,9 @@ footer {
   .about__bio {
     font-size: 1.5rem;
   }
+  .about__bio-image p {
+    margin: 2rem 10vh;
+  }
 
   .projects__bio-image {
     height: 40vh;
@@ -350,6 +351,14 @@ footer {
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .about__bio-image p {
+    margin-left: 20vh;
+    margin-right: 20vh;
+  }
 }
 @media screen and (min-width: 1600px) {
   .projects__bio-image {
@@ -358,6 +367,14 @@ footer {
 
   .about__bio-image {
     height: 50vh;
+  }
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .about__bio-image p {
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 }
 body {

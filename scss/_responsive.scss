@@ -24,12 +24,17 @@
                 font-size: 1.5rem;
             }
         }
+        
     }
-
-
     .about__bio {
         font-size: 1.5rem;
+        
+        &-image p {
+            margin: 2rem 10vh;
+        }
     }
+
+
     .projects {
         &__bio-image {
             height: 40vh;
@@ -54,6 +59,15 @@
     .contact__list {
         grid-template-columns: repeat(3, 1fr);
     }
+    .about__bio {
+        font-size: 1.5rem;
+
+
+        &-image p {
+            margin-left: 20vh;
+            margin-right: 20vh;
+        }
+    }
 }
 @include media-xl {
     .projects__bio-image {
@@ -61,5 +75,13 @@
     }
     .about__bio-image {
         height: 50vh;
+    }
+    .about__bio {
+        font-size: 1.5rem;
+
+        &-image p {
+            margin-left: 30vh;
+            margin-right: 30vh;
+        }
     }
 }
